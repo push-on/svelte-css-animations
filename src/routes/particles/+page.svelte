@@ -1,5 +1,6 @@
 <!-- PARTICLE SYSTEM -->
 <main>
+  <a href="/">Home</a>
   <div class="page-bg" />
 
   <div class="animation-wrapper">
@@ -22,14 +23,14 @@
   $time-3: 180s;
   $time-4: 600s;
 
-  /* Pauls awesome mixin */
-@function particles($max) {
-  $val: 0px 0px $color-particle;
-  @for $i from 1 through $max {
-    $val: #{$val}, math.random(math.div($spacing, 1px)) * 1px, math.random(math.div($spacing, 1px)) * 1px, $color-particle;
+  @function particles($max) {
+    $val: 0px 0px $color-particle;
+    @for $i from 1 through $max {
+      $val: #{$val},
+        math.random($spacing) + px math.random($spacing) + px $color-particle;
+    }
+    @return $val;
   }
-  @return $val;
-}
 
   @mixin particles($max) {
     box-shadow: particles($max);
@@ -37,29 +38,7 @@
 
   /* Styles */
   main {
-    height: 100%;
-  }
-
-  main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2rem;
-    overflow: hidden;
-  }
-
-  .page-bg,
-  .animation-wrapper {
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-
-  .page-bg {
-    background: black;
-    z-index: -1;
   }
 
   .particle,
@@ -132,5 +111,14 @@
     to {
       transform: translateY($spacing * -1);
     }
+  }
+
+  a {
+    position: fixed;
+    top: 3rem;
+    left: 3rem;
+    padding: 1rem;
+    border: 1px solid cadetblue;
+    border-radius: 0.5rem;
   }
 </style>
