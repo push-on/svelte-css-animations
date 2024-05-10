@@ -12,7 +12,7 @@
 <main>
   <div class="hero">
     <div class="hero-content">
-      <h1>CSS Only Scroll Driven Animations</h1>
+      <h1>JS Scroll Driven Animations</h1>
     </div>
   </div>
 
@@ -45,7 +45,7 @@
         voluptatem labore, est, rerum harum accusantium rem sit nulla ex fugiat
         ad quam ipsam.
       </p>
-      <img src={Mounitain_three} alt="" />
+      <img src={Mounitain_four} alt="" />
     </div>
 
     <div>
@@ -55,29 +55,6 @@
         distinctio quas hic pariatur ullam impedit, nesciunt adipisci magni
         labore id consequuntur obcaecati repellat accusantium voluptatem nobis
         ducimus illo, veniam ad.
-      </p>
-      <img src={Mounitain_four} alt="" />
-    </div>
-
-    <div>
-      <h2>Lorem ipsum dolor sit amet</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto delectus
-        expedita officiis praesentium eum totam neque quisquam nihil nam
-        aliquam. Modi illum tempora, voluptatem officiis aut minima. Laborum,
-        temporibus nam?
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam magni,
-        est molestiae velit delectus minima nam accusantium quaerat, ad ducimus
-        expedita, iure reprehenderit cum repudiandae perspiciatis laudantium!
-        Maxime, labore ducimus. Assumenda amet enim dolorem, dolore placeat
-        aliquam alias sequi a! At voluptatem voluptatibus optio explicabo itaque
-        illo deleniti amet cupiditate ipsa ipsum libero, nemo mollitia! Pariatur
-        quae quo ipsum nemo! Veritatis, blanditiis, explicabo molestiae
-        obcaecati aliquam vero laborum quam officia, quasi eaque non dignissimos
-        similique. Ipsam quibusdam asperiores, recusandae repudiandae in culpa,
-        earum inventore vero non eligendi distinctio velit impedit!
       </p>
       <img src={Mounitain_five} alt="" />
     </div>
@@ -104,34 +81,39 @@
       </p>
       <img src={Mounitain_two} alt="" />
     </div>
+
+    <div>
+      <h2>Lorem ipsum dolor sit amet</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto delectus
+        expedita officiis praesentium eum totam neque quisquam nihil nam
+        aliquam. Modi illum tempora, voluptatem officiis aut minima. Laborum,
+        temporibus nam?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam magni,
+        est molestiae velit delectus minima nam accusantium quaerat, ad ducimus
+        expedita, iure reprehenderit cum repudiandae perspiciatis laudantium!
+        Maxime, labore ducimus. Assumenda amet enim dolorem, dolore placeat
+        aliquam alias sequi a! At voluptatem voluptatibus optio explicabo itaque
+        illo deleniti amet cupiditate ipsa ipsum libero, nemo mollitia! Pariatur
+        quae quo ipsum nemo! Veritatis, blanditiis, explicabo molestiae
+        obcaecati aliquam vero laborum quam officia, quasi eaque non dignissimos
+        similique. Ipsam quibusdam asperiores, recusandae repudiandae in culpa,
+        earum inventore vero non eligendi distinctio velit impedit!
+      </p>
+      <img src={Mounitain_three} alt="" />
+    </div>
   </article>
-  <div class="space"/>
+  <div class="space" />
 </main>
 
 <style lang="scss">
-  .space{
+  .space {
     height: 20vh;
   }
-  .scroll_watcher {
-    height: 2px;
-    position: fixed;
-    bottom: 1px;
-    z-index: 1000;
-    background-color: #4158d0;
-    width: 100%;
-    scale: 0 1;
-    animation: scroll-watcher linear;
-    animation-timeline: scroll();
-    transform-origin: left;
-  }
-  @keyframes scroll-watcher {
-    to {
-      scale: 1 1;
-    }
-  }
-
   .hero {
-    background-image: url("../../assets/mountain_two.webp");
+    background-image: url("../../assets/mountain_three.webp");
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -157,21 +139,7 @@
       }
     }
   }
-  article > div > img {
-    animation: fade-in 1s ease-in-out;
-    animation-timeline: view(700px 0px);
-  }
 
-  @keyframes fade-in {
-    from {
-      scale: 0.8;
-      opacity: 0;
-    }
-    to {
-      scale: 1;
-      opacity: 1;
-    }
-  }
   .content {
     max-width: 900px;
     margin: 0 auto;

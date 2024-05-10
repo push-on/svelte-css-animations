@@ -3,7 +3,8 @@
     <h1>CSS <span>Animations</span></h1>
     <div class="links">
       <a href="/particles">1. CSS particles Floating Up</a>
-      <a href="/scroll_animation">2. Scroll Animations</a>
+      <a href="/scroll_animation">2. CSS only Scroll Animations</a>
+      <a href="/observer">2. JS Scroll Animations</a>
     </div>
   </div>
 </main>
@@ -28,7 +29,7 @@
 
     width: fit-content;
     padding-bottom: 1rem;
-    color: white;
+    color: rgb(199 210 254);
     font-size: 1.5rem;
     overflow: hidden;
     position: relative;
@@ -47,6 +48,7 @@
     }
 
     &:hover {
+      color: rgb(241 245 249);
       &::after {
         transform: translate3d(0, 0, 0);
       }
