@@ -24,6 +24,8 @@
   }
 
   a {
+    text-wrap: nowrap;
+
     width: fit-content;
     padding-bottom: 1rem;
     color: white;
@@ -65,6 +67,7 @@
     @media (max-width: 640px) {
       font-size: 3rem;
     }
+    text-wrap: nowrap;
   }
 
   span {

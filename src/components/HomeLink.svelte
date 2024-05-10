@@ -1,4 +1,3 @@
-
 <a href="/">
   <span class="link-text">Home</span>
   <svg
@@ -41,6 +40,12 @@
       .arrow {
         transform: translateX(10px);
       }
+    }
+    @media (max-width: 640px) {
+      top: auto;
+      left: 0.25rem;
+      bottom: 0.25rem;
+      font-size: small;
     }
   }
 </style>

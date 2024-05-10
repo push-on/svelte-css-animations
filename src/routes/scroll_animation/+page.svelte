@@ -114,12 +114,6 @@
     bottom: 1px;
     z-index: 1000;
     background-color: #4158d0;
-    background-image: linear-gradient(
-      43deg,
-      #4158d0 0%,
-      #c850c0 46%,
-      #ffcc70 100%
-    );
     width: 100%;
     scale: 0 1;
     animation: scroll-watcher linear;
@@ -154,7 +148,7 @@
         margin-left: auto;
         margin-right: auto;
         @media (max-width: 640px) {
-          font-size: 4rem;
+          font-size: 3rem;
         }
       }
     }
@@ -172,16 +166,21 @@
     font-size: 3rem;
     line-height: 1;
     margin-bottom: 1rem;
+    @media (max-width: 640px) {
+      font-weight: 500;
+      font-size: 1.5rem;
+    }
   }
 
   p {
+    color: rgb(203 213 225);
     margin: 0;
     font-family: "Open Sans", sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 1.5;
     margin-bottom: 2rem;
-    @media (min-width: 768px) {
-      font-size: 18px;
+    @media (max-width: 640px) {
+      font-size: 0.8rem;
     }
   }
 
@@ -190,5 +189,7 @@
     max-width: 100%;
     height: auto;
     margin-bottom: 1rem;
+    box-shadow: 0 15px 40px -12px rgb(0 0 0);
+    border: 1px solid rgb(41, 41, 41);
   }
 </style>
