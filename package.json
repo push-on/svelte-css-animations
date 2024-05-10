@@ -12,7 +12,6 @@
     "@sveltejs/kit": "^2.5.7",
     "sass": "^1.77.0",
     "svelte": "^4.2.16",
-    "svelte-intersection-observer": "^1.0.0",
     "svelte-preprocess": "^5.1.4",
     "vite": "^5.2.11"
   },

@@ -5,10 +5,13 @@
   import Mounitain_three from "../../assets/mountain_three.webp"
   import Mounitain_four from "../../assets/mountain_four.webp"
   import Mounitain_five from "../../assets/mountain_five.webp"
+
+  import IntersectionObserver from "../../components/IntersactionObserver.svelte"
 </script>
 
 <div class="scroll_watcher" />
 <HomeLink />
+
 <main>
   <div class="hero">
     <div class="hero-content">
@@ -17,98 +20,135 @@
   </div>
 
   <article class="content">
-    <div>
-      <h2>Lorem ipsum dolor sit amet</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
-        corrupti, totam nostrum fuga reprehenderit esse placeat itaque cumque
-        veritatis facere reiciendis similique rerum qui dolorum possimus soluta
-        aperiam. Quis, facere.
-      </p>
-      <img src={Mounitain_one} alt="" />
-    </div>
-
-    <div>
-      <h2>Lorem ipsum dolor sit amet</h2>
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit amet
-        praesentium hic dicta iure, dolorem laudantium reprehenderit sit aliquam
-        deleniti sequi consequuntur alias beatae blanditiis temporibus quisquam
-        iste nam. Nobis?
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint minus
-        quisquam et facilis excepturi nesciunt officia laudantium ad culpa ipsum
-        consequatur soluta quis, aliquam atque magnam praesentium quasi, dolorem
-        aspernatur. Corporis excepturi quae officia aliquam! Error sunt quisquam
-        odit nesciunt alias qui. Suscipit quisquam consequatur, laudantium
-        voluptatem labore, est, rerum harum accusantium rem sit nulla ex fugiat
-        ad quam ipsam.
-      </p>
-      <img src={Mounitain_four} alt="" />
-    </div>
-
-    <div>
-      <h2>Lorem ipsum dolor sit amet</h2>
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non,
-        distinctio quas hic pariatur ullam impedit, nesciunt adipisci magni
-        labore id consequuntur obcaecati repellat accusantium voluptatem nobis
-        ducimus illo, veniam ad.
-      </p>
-      <img src={Mounitain_five} alt="" />
-    </div>
-
-    <div>
-      <h2>Lorem ipsum dolor sit amet</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto delectus
-        expedita officiis praesentium eum totam neque quisquam nihil nam
-        aliquam. Modi illum tempora, voluptatem officiis aut minima. Laborum,
-        temporibus nam?
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam magni,
-        est molestiae velit delectus minima nam accusantium quaerat, ad ducimus
-        expedita, iure reprehenderit cum repudiandae perspiciatis laudantium!
-        Maxime, labore ducimus. Assumenda amet enim dolorem, dolore placeat
-        aliquam alias sequi a! At voluptatem voluptatibus optio explicabo itaque
-        illo deleniti amet cupiditate ipsa ipsum libero, nemo mollitia! Pariatur
-        quae quo ipsum nemo! Veritatis, blanditiis, explicabo molestiae
-        obcaecati aliquam vero laborum quam officia, quasi eaque non dignissimos
-        similique. Ipsam quibusdam asperiores, recusandae repudiandae in culpa,
-        earum inventore vero non eligendi distinctio velit impedit!
-      </p>
-      <img src={Mounitain_two} alt="" />
-    </div>
-
-    <div>
-      <h2>Lorem ipsum dolor sit amet</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto delectus
-        expedita officiis praesentium eum totam neque quisquam nihil nam
-        aliquam. Modi illum tempora, voluptatem officiis aut minima. Laborum,
-        temporibus nam?
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam magni,
-        est molestiae velit delectus minima nam accusantium quaerat, ad ducimus
-        expedita, iure reprehenderit cum repudiandae perspiciatis laudantium!
-        Maxime, labore ducimus. Assumenda amet enim dolorem, dolore placeat
-        aliquam alias sequi a! At voluptatem voluptatibus optio explicabo itaque
-        illo deleniti amet cupiditate ipsa ipsum libero, nemo mollitia! Pariatur
-        quae quo ipsum nemo! Veritatis, blanditiis, explicabo molestiae
-        obcaecati aliquam vero laborum quam officia, quasi eaque non dignissimos
-        similique. Ipsam quibusdam asperiores, recusandae repudiandae in culpa,
-        earum inventore vero non eligendi distinctio velit impedit!
-      </p>
-      <img src={Mounitain_three} alt="" />
-    </div>
+    <IntersectionObserver let:intersecting>
+      <div class={intersecting ? "slide-in-left" : ""}>
+        <h2>Lorem ipsum dolor sit amet</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
+          corrupti, totam nostrum fuga reprehenderit esse placeat itaque cumque
+          veritatis facere reiciendis similique rerum qui dolorum possimus
+          soluta aperiam. Quis, facere.
+        </p>
+        <img src={Mounitain_one} alt="" />
+      </div>
+    </IntersectionObserver>
+    <IntersectionObserver let:intersecting>
+      <div class={intersecting ? "slide-in-left" : ""}>
+        <h2>Lorem ipsum dolor sit amet</h2>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit amet
+          praesentium hic dicta iure, dolorem laudantium reprehenderit sit
+          aliquam deleniti sequi consequuntur alias beatae blanditiis temporibus
+          quisquam iste nam. Nobis?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint minus
+          quisquam et facilis excepturi nesciunt officia laudantium ad culpa
+          ipsum consequatur soluta quis, aliquam atque magnam praesentium quasi,
+          dolorem aspernatur. Corporis excepturi quae officia aliquam! Error
+          sunt quisquam odit nesciunt alias qui. Suscipit quisquam consequatur,
+          laudantium voluptatem labore, est, rerum harum accusantium rem sit
+          nulla ex fugiat ad quam ipsam.
+        </p>
+        <img src={Mounitain_four} alt="" />
+      </div>
+    </IntersectionObserver>
+    <IntersectionObserver let:intersecting>
+      <div class={intersecting ? "slide-in-left" : ""}>
+        <h2>Lorem ipsum dolor sit amet</h2>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non,
+          distinctio quas hic pariatur ullam impedit, nesciunt adipisci magni
+          labore id consequuntur obcaecati repellat accusantium voluptatem nobis
+          ducimus illo, veniam ad.
+        </p>
+        <img src={Mounitain_five} alt="" />
+      </div>
+    </IntersectionObserver>
+    <IntersectionObserver let:intersecting>
+      <div class={intersecting ? "slide-in-left" : ""}>
+        <h2>Lorem ipsum dolor sit amet</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+          delectus expedita officiis praesentium eum totam neque quisquam nihil
+          nam aliquam. Modi illum tempora, voluptatem officiis aut minima.
+          Laborum, temporibus nam?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam magni,
+          est molestiae velit delectus minima nam accusantium quaerat, ad
+          ducimus expedita, iure reprehenderit cum repudiandae perspiciatis
+          laudantium! Maxime, labore ducimus. Assumenda amet enim dolorem,
+          dolore placeat aliquam alias sequi a! At voluptatem voluptatibus optio
+          explicabo itaque illo deleniti amet cupiditate ipsa ipsum libero, nemo
+          mollitia! Pariatur quae quo ipsum nemo! Veritatis, blanditiis,
+          explicabo molestiae obcaecati aliquam vero laborum quam officia, quasi
+          eaque non dignissimos similique. Ipsam quibusdam asperiores,
+          recusandae repudiandae in culpa, earum inventore vero non eligendi
+          distinctio velit impedit!
+        </p>
+        <img src={Mounitain_two} alt="" />
+      </div>
+    </IntersectionObserver>
+    <IntersectionObserver let:intersecting>
+      <div class={intersecting ? "slide-in-left" : ""}>
+        <h2>Lorem ipsum dolor sit amet</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+          delectus expedita officiis praesentium eum totam neque quisquam nihil
+          nam aliquam. Modi illum tempora, voluptatem officiis aut minima.
+          Laborum, temporibus nam?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam magni,
+          est molestiae velit delectus minima nam accusantium quaerat, ad
+          ducimus expedita, iure reprehenderit cum repudiandae perspiciatis
+          laudantium! Maxime, labore ducimus. Assumenda amet enim dolorem,
+          dolore placeat aliquam alias sequi a! At voluptatem voluptatibus optio
+          explicabo itaque illo deleniti amet cupiditate ipsa ipsum libero, nemo
+          mollitia! Pariatur quae quo ipsum nemo! Veritatis, blanditiis,
+          explicabo molestiae obcaecati aliquam vero laborum quam officia, quasi
+          eaque non dignissimos similique. Ipsam quibusdam asperiores,
+          recusandae repudiandae in culpa, earum inventore vero non eligendi
+          distinctio velit impedit!
+        </p>
+        <img src={Mounitain_three} alt="" />
+      </div>
+    </IntersectionObserver>
   </article>
   <div class="space" />
 </main>
 
 <style lang="scss">
+  .slide-in-left {
+    -webkit-animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+      0.2s both;
+    animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s both;
+  }
+  @-webkit-keyframes slide-in-left {
+    0% {
+      -webkit-transform: translateX(-1000px);
+      transform: translateX(-1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in-left {
+    0% {
+      -webkit-transform: translateX(-1000px);
+      transform: translateX(-1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
   .space {
     height: 20vh;
   }
