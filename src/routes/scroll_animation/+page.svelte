@@ -140,7 +140,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
+    width: 100vw;
     .hero-content {
       text-align: center;
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
@@ -153,6 +153,9 @@
         max-width: 75%;
         margin-left: auto;
         margin-right: auto;
+        @media (max-width: 640px) {
+          font-size: 4rem;
+        }
       }
     }
   }

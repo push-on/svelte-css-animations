@@ -62,7 +62,11 @@
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 100;
     user-select: none;
+    @media (max-width: 640px) {
+      font-size: 3rem;
+    }
   }
+
   span {
     font-weight: 400;
     background: linear-gradient(
