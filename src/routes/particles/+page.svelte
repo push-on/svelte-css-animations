@@ -33,7 +33,8 @@
     @for $i from 1 through $max {
       $val:
         #{$val},
-        math.random($spacing) + px math.random($spacing) + px $color-particle;
+        math.random(math.div($spacing, 1px)) * 1px math.random(math.div($spacing, 1px)) * 1px $color-particle;
+
     }
     @return $val;
   }

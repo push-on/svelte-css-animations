@@ -1,10 +1,10 @@
 <main class="container">
   <div>
-    <h1>CSS <span>Animations</span></h1>
+    <h1>Web <span>Animations</span></h1>
     <div class="links">
       <a href="/particles">1. CSS particles Floating Up</a>
       <a href="/scroll_animation">2. CSS only Scroll Animations</a>
-      <a href="/observer">2. JS Scroll Animations</a>
+      <a href="/observer">3. IntersactionObserver Animations</a>
     </div>
   </div>
 </main>

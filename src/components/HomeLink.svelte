@@ -29,7 +29,7 @@
     border-radius: 1rem;
     display: inline-flex;
     align-items: center;
-
+    z-index: 1;
     .arrow {
       width: 1.5rem;
       transition: 0.3s;
