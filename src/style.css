@@ -1,7 +1,8 @@
 :root {
 	color-scheme: light dark;
 	box-sizing: border-box;
-	font-family: sans-serif;
+	font-family: system-ui, "Segoe UI", "Open Sans", "Helvetica Neue",
+		sans-serif;
 	font-synthesis: none;
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
@@ -75,4 +76,3 @@ input {
 	padding-left: 20px;
 	padding-right: 20px;
 }
-

@@ -1,6 +1,11 @@
+<script>
+  import HomeLink from "../../components/HomeLink.svelte"
+</script>
+
 <!-- PARTICLE SYSTEM -->
 <main>
-  <a href="/">Home</a>
+  <HomeLink />
+
   <div class="page-bg" />
 
   <div class="animation-wrapper">
@@ -26,7 +31,8 @@
   @function particles($max) {
     $val: 0px 0px $color-particle;
     @for $i from 1 through $max {
-      $val: #{$val},
+      $val:
+        #{$val},
         math.random($spacing) + px math.random($spacing) + px $color-particle;
     }
     @return $val;
@@ -111,14 +117,5 @@
     to {
       transform: translateY($spacing * -1);
     }
-  }
-
-  a {
-    position: fixed;
-    top: 3rem;
-    left: 3rem;
-    padding: 1rem;
-    border: 1px solid cadetblue;
-    border-radius: 0.5rem;
   }
 </style>

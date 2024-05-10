@@ -1,7 +1,5 @@
-
-
 <script>
- import '../style.css'
+  import "../style.css"
   import { fly } from "svelte/transition"
   import { cubicIn, cubicOut } from "svelte/easing"
 
@@ -16,10 +14,7 @@
 </script>
 
 {#key data.pathname}
-  <div
-    in:fly={transitionIn}
-    out:fly={transitionOut}
-  >
+  <div in:fly={transitionIn} out:fly={transitionOut}>
     <slot />
   </div>
 {/key}
