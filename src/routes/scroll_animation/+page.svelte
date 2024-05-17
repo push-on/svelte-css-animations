@@ -13,6 +13,9 @@
   <div class="hero">
     <div class="hero-content">
       <h1>CSS Only Scroll Driven Animations</h1>
+      <p>
+       supported on chromium based browsers only
+      </p>
     </div>
   </div>
 

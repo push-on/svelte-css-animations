@@ -4,7 +4,8 @@
     <div class="links">
       <a href="/particles">1. CSS particles Floating Up</a>
       <a href="/scroll_animation">2. CSS only Scroll Animations</a>
-      <a href="/observer">3. IntersactionObserver Animations</a>
+      <a href="/observer">3. JS IntersactionObserver Animations</a>
+      <a href="/paralax_scrolling">4. Paralax scrolling</a>
     </div>
   </div>
 </main>
@@ -26,7 +27,6 @@
 
   a {
     text-wrap: nowrap;
-
     width: fit-content;
     padding-bottom: 1rem;
     color: rgb(199 210 254);
@@ -34,7 +34,7 @@
     overflow: hidden;
     position: relative;
     display: inline-block;
-
+    transition-duration: 500ms;
     &::after {
       content: "";
       position: absolute;
