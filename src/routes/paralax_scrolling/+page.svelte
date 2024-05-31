@@ -1,12 +1,11 @@
 <script>
-  import mountain_front from "../../assets/paralax/1.webp"
-  import mountain_mid from "../../assets/paralax/2.webp"
-  import mountain_back from "../../assets/paralax/3.webp"
-  import sky from "../../assets/paralax/4.webp"
+  import mountain_front from "../../assets/paralax/1.webp";
+  import mountain_mid from "../../assets/paralax/2.webp";
+  import mountain_back from "../../assets/paralax/3.webp";
 </script>
 
 <div class="wrapper">
-  <header>
+  <header >
     <img class="forground_1 img" src={mountain_front} alt="" />
     <img class="forground_2 img" src={mountain_mid} alt="" />
     <img class="forground_3 img" src={mountain_back} alt="" />
@@ -70,4 +69,5 @@
     top: 10%;
     transform: translateZ(-15px) scale(2.5);
   }
+ 
 </style>

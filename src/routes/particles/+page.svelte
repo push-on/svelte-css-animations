@@ -1,10 +1,7 @@
-<script>
-  import HomeLink from "../../components/HomeLink.svelte"
-</script>
+
 
 <!-- PARTICLE SYSTEM -->
 <main>
-  <HomeLink />
 
   <div class="page-bg" />
 

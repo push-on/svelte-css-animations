@@ -6,6 +6,7 @@
       <a href="/scroll_animation">2. CSS only Scroll Animations</a>
       <a href="/observer">3. JS IntersactionObserver Animations</a>
       <a href="/paralax_scrolling">4. Paralax scrolling</a>
+      <a href="/motion">5. Motion</a>
     </div>
   </div>
 </main>

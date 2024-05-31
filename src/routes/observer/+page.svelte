@@ -1,5 +1,4 @@
 <script>
-  import HomeLink from "../../components/HomeLink.svelte"
   import Mounitain_one from "../../assets/mountain_one.webp"
   import Mounitain_two from "../../assets/mountain_two.webp"
   import Mounitain_three from "../../assets/mountain_three.webp"
@@ -10,7 +9,6 @@
 </script>
 
 <div class="scroll_watcher" />
-<HomeLink />
 
 <main>
   <div class="hero">
