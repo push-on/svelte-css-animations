@@ -1,23 +1,22 @@
 <script>
-  import { onMount } from "svelte"
-  import { animate} from "motion"
+  import { onMount } from "svelte";
+  import { animate } from "motion";
 
-  const rows = 15
-  const cols = 15
+  const rows = 15;
+  const cols = 15;
 
   const calculateStagger = (index) => {
-    const row = Math.floor(index / cols)
-    const col = index % cols
-    const centerRow = (rows - 1) / 2
-    const centerCol = (cols - 1) / 2
-    const distanceFromCenter = Math.sqrt(
-      (row - centerRow) ** 2 + (col - centerCol) ** 2
-    )
-    return distanceFromCenter * 0.1
-  }
+    const row = Math.floor(index / cols);
+    const col = index % cols;
+    const centerRow = (rows - 1) / 2;
+    const centerCol = (cols - 1) / 2;
+    const distanceFromCenter = Math.sqrt((row - centerRow) ** 2 + (col - centerCol) ** 2);
+    return distanceFromCenter * 0.1;
+  };
 
   onMount(() => {
-    const boxes = document.querySelectorAll(".box")
+    const boxes = document.querySelectorAll(".box");
+    const staggerValues = Array.from({ length: rows * cols }, (_, i) => calculateStagger(i));
     boxes.forEach((box, index) => {
       animate(
         box,
@@ -28,13 +27,13 @@
         },
         {
           duration: 1.5,
-          delay: calculateStagger(index),
+          delay: staggerValues[index],
           easing: "cubic-bezier(.22,.2,0,.99)",
           repeat: Infinity,
         }
-      )
-    })
-  })
+      );
+    });
+  });
 </script>
 
 <div class="grid">
@@ -55,5 +54,6 @@
     height: 50px;
     border-radius: 0.375rem;
     background-color: #786feb;
+    will-change: transform, opacity;
   }
 </style>
