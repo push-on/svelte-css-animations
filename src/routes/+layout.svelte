@@ -22,10 +22,16 @@
   <meta name="twitter:card" content="summary_large_image" />
 </svelte:head>
 {#key data.pathname}
-  <div in:fly={transitionIn} out:fly={transitionOut}>
+  <div class="layout" in:fly={transitionIn} out:fly={transitionOut}>
     {#if data.pathname !== "/"}
       <HomeLink />
     {/if}
     <slot />
   </div>
 {/key}
+
+<style lang="scss">
+  .layout {
+    height: 100vh;
+  }
+</style>

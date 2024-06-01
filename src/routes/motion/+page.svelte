@@ -43,41 +43,51 @@
   })
 </script>
 
-<h1 class="title">MOTION ONE</h1>
-<div class="ball position-L"></div>
-<div class="ball position-R"></div>
-<div class="box"></div>
-<div class="glass">GLASS</div>
+<div class="container">
+  <h1 class="title">MOTION ONE</h1>
+  <div class="ball position-L"></div>
+  <div class="ball position-R"></div>
+  <div class="box"></div>
+  <h1 class="glass">GLASS</h1>
+</div>
 
 <style lang="scss">
-  .glass {
-    text-align: center;
+  .container {
+    height: 100%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  .glass {
+    text-align: center;
     font-size: 5rem;
-    line-height: 1;
     position: absolute;
     color: rgba(0, 0, 0, 0.37);
     z-index: 1000;
-    top: 2%;
-    width: 50vw;
-    height: 150px;
+    bottom: 60%;
+    padding-left: 17rem;
+    padding-right: 17rem;
+    padding-top: 1.75rem;
+    padding-bottom: 1.75rem;
     background: rgba(255, 255, 255, 0.05);
     border-radius: 16px;
     box-shadow: 0 4px 40px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     border: 1px solid rgba(255, 255, 255, 0.47);
-    left: 0;
-    right: 0;
-    margin: auto;
     @media (max-width: 640px) {
-      width: 90vw;
-      height: 100px;
-      top: 5%;
+      padding-left: 2.5rem;
+      padding-right: 2.5rem;
+      padding-top: 1.75rem;
+      padding-bottom: 1.75rem;
       backdrop-filter: blur(10px);
       -webkit-backdrop-filter: blur(10px);
+    }
+    @media (max-width: 400px) {
+      font-size: 3rem;
     }
   }
   .ball {
@@ -110,7 +120,7 @@
     left: 0;
     right: 0;
     margin: auto;
-    top: 50%;
+    bottom: 10%;
     @media (max-width: 640px) {
       width: 100px;
       height: 100px;
@@ -141,14 +151,14 @@
     -webkit-text-fill-color: transparent;
     font-size: 6rem;
     text-align: center;
-    position: absolute;
     letter-spacing: 0.5rem;
-    left: 0;
-    right: 0;
     margin: auto;
     top: 30%;
     @media (max-width: 900px) {
       font-size: 2rem;
+    }
+    @media (max-width: 400px) {
+      font-size: 1rem;
     }
     opacity: 0;
   }

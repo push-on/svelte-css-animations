@@ -32,7 +32,6 @@
 <style lang="scss">
   main {
     overflow: hidden;
-    border: 1px solid white;
     width: 100vw;
     height: 100vh;
 
