@@ -7,6 +7,8 @@
       <a href="/observer">3. JS IntersactionObserver Animations</a>
       <a href="/paralax_scrolling">4. Paralax scrolling</a>
       <a href="/motion">5. Motion</a>
+      <a href="/motion_offset">6. Motion offset</a>
+      <a href="/Grid_Animation">6. Grid Animations</a>
     </div>
   </div>
 </main>
