@@ -160,7 +160,7 @@
     padding-right: 1.25rem;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
-    background-color: rgba(250, 250, 250, 0.271);
+    background-color: rgba(250, 250, 250, 0.153);
     color: white;
     display: flex;
     align-items: center;
@@ -171,5 +171,6 @@
     transition: opacity 0.3s, transform 0.3s;
     opacity: 1;
     backdrop-filter: blur(5px);
+    
   }
 </style>
